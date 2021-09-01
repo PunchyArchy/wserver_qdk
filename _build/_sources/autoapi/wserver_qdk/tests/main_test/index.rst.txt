@@ -1,0 +1,66 @@
+:py:mod:`wserver_qdk.tests.main_test`
+=====================================
+
+.. py:module:: wserver_qdk.tests.main_test
+
+.. autoapi-nested-parse::
+
+   Тесты основного класса. 
+
+
+
+Module Contents
+---------------
+
+Classes
+~~~~~~~
+
+.. autoapisummary::
+
+   wserver_qdk.tests.main_test.MainTest
+
+
+
+
+.. py:class:: MainTest(*args, **kwargs)
+
+   Bases: :py:obj:`unittest.TestCase`
+
+   Test Case 
+
+   .. py:method:: test_set_act(self)
+
+
+   .. py:method:: test_get_auto_id(self)
+
+
+   .. py:method:: test_get_carrier_id(self)
+
+      Вернуть ID перевозчика 
+
+
+   .. py:method:: test_set_photo(self)
+
+
+   .. py:method:: test_set_operator(self)
+
+
+   .. py:method:: test_set_auto(self)
+
+
+   .. py:method:: test_set_carrier(self)
+
+
+   .. py:method:: test_set_operator_notes(self)
+
+
+   .. py:method:: test_set_trash_cat(self)
+
+
+   .. py:method:: test_set_trash_type(self)
+
+
+   .. py:method:: test_get_rfid_num(self)
+
+
+

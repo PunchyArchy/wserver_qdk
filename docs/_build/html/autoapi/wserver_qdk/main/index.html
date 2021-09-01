@@ -1,0 +1,399 @@
+
+<!DOCTYPE html>
+
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>wserver_qdk.main &#8212; документация WServer QDK 0.0.1</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/alabaster.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css" />
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/translations.js"></script>
+    <link rel="index" title="Алфавитный указатель" href="../../../genindex.html" />
+    <link rel="search" title="Поиск" href="../../../search.html" />
+   
+  <link rel="stylesheet" href="../../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="module-wserver_qdk.main">
+<span id="wserver-qdk-main"></span><h1><a class="reference internal" href="#module-wserver_qdk.main" title="wserver_qdk.main"><code class="xref py py-mod docutils literal notranslate"><span class="pre">wserver_qdk.main</span></code></a><a class="headerlink" href="#module-wserver_qdk.main" title="Ссылка на этот заголовок">¶</a></h1>
+<p>Модуль содержит основной Singleton для работы.</p>
+<section id="module-contents">
+<h2>Module Contents<a class="headerlink" href="#module-contents" title="Ссылка на этот заголовок">¶</a></h2>
+<section id="classes">
+<h3>Classes<a class="headerlink" href="#classes" title="Ссылка на этот заголовок">¶</a></h3>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#wserver_qdk.main.WServerQDK" title="wserver_qdk.main.WServerQDK"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WServerQDK</span></code></a></p></td>
+<td><p>Основной класс для взаимодействия с WServer</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="py class">
+<dt class="sig sig-object py" id="wserver_qdk.main.WServerQDK">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">wserver_qdk.main.</span></span><span class="sig-name descname"><span class="pre">WServerQDK</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#wserver_qdk.main.WServerQDK" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-obj docutils literal notranslate"><span class="pre">qdk.main.QDK</span></code></p>
+<p>Основной класс для взаимодействия с WServer</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="wserver_qdk.main.WServerQDK.set_act">
+<span class="sig-name descname"><span class="pre">set_act</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">auto_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gross</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tare</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cargo</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time_in</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time_out</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">carrier_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">trash_cat_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">trash_type_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">polygon_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">operator</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ex_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#wserver_qdk.main.WServerQDK.set_act" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Добавить новый акт на WServer.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>auto_id</strong> – ID автомобиля</p></li>
+<li><p><strong>gross</strong> – Вес-брутто</p></li>
+<li><p><strong>tare</strong> – Вес-тара</p></li>
+<li><p><strong>cargo</strong> – Вес-нетто</p></li>
+<li><p><strong>time_in</strong> – Время въезда</p></li>
+<li><p><strong>time_out</strong> – Время выезда</p></li>
+<li><p><strong>carrier_id</strong> – ID перевозчика</p></li>
+<li><p><strong>trash_cat_id</strong> – ID категории груза</p></li>
+<li><p><strong>trash_type_id</strong> – ID вида груза</p></li>
+<li><p><strong>polygon_id</strong> – ID полигона</p></li>
+<li><p><strong>operator</strong> – ID весовщика</p></li>
+<li><p><strong>ex_id</strong> – ID записи в wdb</p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>В случае успеха:</dt><dd><p>{„status“: True, „info“: <em>id: int</em>)</p>
+</dd>
+<dt>В случае провала:</dt><dd><p>{„status“: False, „info“: Python Traceback}</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="wserver_qdk.main.WServerQDK.get_auto_id">
+<span class="sig-name descname"><span class="pre">get_auto_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">car_number</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#wserver_qdk.main.WServerQDK.get_auto_id" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Вернуть ID авто по его гос. номеру.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>car_number</strong> – гос.номер авто.</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>В случае успеха:</dt><dd><p>{„status“: True, „info“: <em>id: int</em>)</p>
+</dd>
+<dt>В случае провала:</dt><dd><p>{„status“: False, „info“: Python Traceback}</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="wserver_qdk.main.WServerQDK.get_carrier_id">
+<span class="sig-name descname"><span class="pre">get_carrier_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">carrier_name</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#wserver_qdk.main.WServerQDK.get_carrier_id" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Вернуть ID компании-перевозчика по его названию.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>carrier_name</strong> – название компании-перевозчика.</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="wserver_qdk.main.WServerQDK.set_photo">
+<span class="sig-name descname"><span class="pre">set_photo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">record_id</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">photo_obj</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">photo_type</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#wserver_qdk.main.WServerQDK.set_photo" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Сохранить фотографии на WServer.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>record_id</strong> – ID заезда, к которому относится фотография.</p></li>
+<li><p><strong>photo_obj</strong> – Объект фото в кодировке base64, но в виде строки.</p></li>
+<li><p><strong>photo_type</strong> – Тип фотографии (gdb.photo_types).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>В случае успеха:</dt><dd><p>{„status“: True, „info“: <em>id: int</em>)</p>
+</dd>
+<dt>В случае провала:</dt><dd><p>{„status“: False, „info“: Python Traceback}</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="wserver_qdk.main.WServerQDK.set_operator">
+<span class="sig-name descname"><span class="pre">set_operator</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">full_name</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">login</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">password</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">polygon</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">active</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">bool</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#wserver_qdk.main.WServerQDK.set_operator" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Добавить нового весовщика.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>full_name</strong> – Полное имя весовщика (ФИО).</p></li>
+<li><p><strong>login</strong> – Логин пользователя.</p></li>
+<li><p><strong>password</strong> – Пароль пользователя.</p></li>
+<li><p><strong>polygon</strong> – ID полигона, за которым закреплен весовщик.</p></li>
+<li><p><strong>active</strong> – Запись по умолчанию активна?</p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>В случае успеха:</dt><dd><p>{„status“: True, „info“: <em>id: int</em>)</p>
+</dd>
+<dt>В случае провала:</dt><dd><p>{„status“: False, „info“: Python Traceback}</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="wserver_qdk.main.WServerQDK.set_auto">
+<span class="sig-name descname"><span class="pre">set_auto</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">car_number</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">polygon</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rg_weight</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rfid_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#wserver_qdk.main.WServerQDK.set_auto" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Добавить новое авто.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>car_number</strong> – Гос. номер</p></li>
+<li><p><strong>polygon</strong> – Полигон, за которым закреплено авто, если авто
+передвигается по всему региону, его стоит закрепить за РО.</p></li>
+<li><p><strong>id_type</strong> – Протокол авто (rfid, NEG, tails)</p></li>
+<li><p><strong>rg_weight</strong> – Справочный вес (тара)</p></li>
+<li><p><strong>model</strong> – ID модели авто из gdb.auto_models</p></li>
+<li><p><strong>rfid_id</strong> – ID RFID метки из gdb.rfid_marks</p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>В случае успеха:</dt><dd><p>{„status“: True, „info“: <em>id: int</em>)</p>
+</dd>
+<dt>В случае провала:</dt><dd><p>{„status“: False, „info“: Python Traceback}</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="wserver_qdk.main.WServerQDK.set_carrier">
+<span class="sig-name descname"><span class="pre">set_carrier</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inn</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kpp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">polygon</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">status</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">active</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ex_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#wserver_qdk.main.WServerQDK.set_carrier" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Добавить нового перевозчика.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – Название перевозчика.</p></li>
+<li><p><strong>inn</strong> – ИНН перевозчика.</p></li>
+<li><p><strong>kpp</strong> – КПП перевозчика.</p></li>
+<li><p><strong>ex_id</strong> – ID перевозичка из внешней системы. (1C, например)</p></li>
+<li><p><strong>status</strong> – Действующий или нет? True/False</p></li>
+<li><p><strong>polygon</strong> – ID полигона.</p></li>
+<li><p><strong>active</strong> – Запись по умолчанию активна?</p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>В случае успеха:</dt><dd><p>{„status“: True, „info“: <em>id: int</em>)</p>
+</dd>
+<dt>В случае провала:</dt><dd><p>{„status“: False, „info“: Python Traceback}</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="wserver_qdk.main.WServerQDK.set_operator_notes">
+<span class="sig-name descname"><span class="pre">set_operator_notes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">record</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">note</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">note_type</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#wserver_qdk.main.WServerQDK.set_operator_notes" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Добавить комментарии весовщика к заезду.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>record</strong> – ID заезда</p></li>
+<li><p><strong>note</strong> – Комментарий</p></li>
+<li><p><strong>note_type</strong> – Тип комментария (при брутто, добавочный и т.д.)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>В случае успеха:</dt><dd><p>{„status“: True, „info“: <em>id: int</em>)</p>
+</dd>
+<dt>В случае провала:</dt><dd><p>{„status“: False, „info“: Python Traceback}</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="wserver_qdk.main.WServerQDK.set_trash_cat">
+<span class="sig-name descname"><span class="pre">set_trash_cat</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">polygon</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">active</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#wserver_qdk.main.WServerQDK.set_trash_cat" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Добавить новую категорию груза.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – Название категории груза.</p></li>
+<li><p><strong>polygon</strong> – ID полигона.</p></li>
+<li><p><strong>active</strong> – Запись по умолчанию активна?</p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>В случае успеха:</dt><dd><p>{„status“: True, „info“: <em>id: int</em>)</p>
+</dd>
+<dt>В случае провала:Отп</dt><dd><p>{„status“: False, „info“: Python Traceback}</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="wserver_qdk.main.WServerQDK.set_trash_type">
+<span class="sig-name descname"><span class="pre">set_trash_type</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">polygon</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">category</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">active</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">bool</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#wserver_qdk.main.WServerQDK.set_trash_type" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Добавить новый вид груза.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – Название вида груза.</p></li>
+<li><p><strong>category</strong> – ID категории груза, за которым этот вид закреплен.</p></li>
+<li><p><strong>polygon</strong> – ID полигона.</p></li>
+<li><p><strong>active</strong> – Запись по умолчанию активна?</p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>В случае успеха:</dt><dd><p>{„status“: True, „info“: <em>id: int</em>)</p>
+</dd>
+<dt>В случае провала:</dt><dd><p>{„status“: False, „info“: Python Traceback}</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="wserver_qdk.main.WServerQDK.get_rfid_id">
+<span class="sig-name descname"><span class="pre">get_rfid_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rfid</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#wserver_qdk.main.WServerQDK.get_rfid_id" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Вернуть ID RFID метки по его коду. (10 символов)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры</dt>
+<dd class="field-odd"><p><strong>rfid</strong> – последовательность условной длины, явяляющей частью номера
+RFID метки.</p>
+</dd>
+<dt class="field-even">Результат</dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>В случае успеха:</dt><dd><p>{„status“: True, „info“: <em>id: int</em>)</p>
+</dd>
+<dt>В случае провала:</dt><dd><p>{„status“: False, „info“: Python Traceback}</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../../index.html">WServer QDK</a></h1>
+
+
+
+
+
+
+
+
+<h3>Навигация</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">API Reference</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Быстрый поиск</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Искать" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021, PunchyArchy.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../../../_sources/autoapi/wserver_qdk/main/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

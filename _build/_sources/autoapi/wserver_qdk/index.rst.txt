@@ -1,0 +1,25 @@
+:py:mod:`wserver_qdk`
+=====================
+
+.. py:module:: wserver_qdk
+
+
+Subpackages
+-----------
+.. toctree::
+   :titlesonly:
+   :maxdepth: 3
+
+   tests/index.rst
+
+
+Submodules
+----------
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
+
+   main/index.rst
+   tools/index.rst
+
+

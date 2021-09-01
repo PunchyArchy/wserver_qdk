@@ -1,0 +1,32 @@
+:py:mod:`wserver_qdk.tools`
+===========================
+
+.. py:module:: wserver_qdk.tools
+
+.. autoapi-nested-parse::
+
+   Разный инструментарий, полезный при взаимодействии с WServer 
+
+
+
+Module Contents
+---------------
+
+
+Functions
+~~~~~~~~~
+
+.. autoapisummary::
+
+   wserver_qdk.tools.encode_photo
+
+
+
+.. py:function:: encode_photo(photo_path)
+
+   Кодирует фото в base64
+
+   :param photo_path: Абсолютный путь до фото.
+   :return: Последовательность в кодировке base64.
+
+

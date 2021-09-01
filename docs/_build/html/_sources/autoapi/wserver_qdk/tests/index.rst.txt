@@ -1,0 +1,15 @@
+:py:mod:`wserver_qdk.tests`
+===========================
+
+.. py:module:: wserver_qdk.tests
+
+
+Submodules
+----------
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
+
+   main_test/index.rst
+
+
